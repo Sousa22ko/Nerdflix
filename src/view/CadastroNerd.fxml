@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="511.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CadastroNerdController">
+   <children>
+      <GridPane alignment="TOP_CENTER" layoutX="26.0" layoutY="27.0" prefHeight="296.0" prefWidth="472.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" textAlignment="CENTER" wrappingWidth="217.13671875" />
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" textAlignment="CENTER" wrappingWidth="215.13671875" GridPane.rowIndex="1" />
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" textAlignment="CENTER" wrappingWidth="215.13671875" GridPane.rowIndex="2" />
+            <TextField fx:id="usuario" prefHeight="27.0" prefWidth="238.0" style="-fx-background-color: black; -fx-border-color: red;" GridPane.columnIndex="1" />
+            <TextField fx:id="nome" style="-fx-background-color: black; -fx-border-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Idade" textAlignment="CENTER" wrappingWidth="212.70703125" GridPane.rowIndex="3" />
+            <TextField fx:id="idade" style="-fx-background-color: black; -fx-border-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <PasswordField fx:id="senha" prefHeight="27.0" prefWidth="0.0" style="-fx-background-color: black; -fx-border-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="203.0" text="Privilegio" textAlignment="CENTER" textFill="RED" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <ChoiceBox fx:id="cb" prefHeight="25.0" prefWidth="236.0" style="-fx-background-color: black; -fx-border-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <ButtonBar layoutX="270.0" layoutY="349.0" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Button mnemonicParsing="false" onMouseClicked="#handlervoltar" style="-fx-border-color: red; -fx-background-color: black;" text="Voltar" textFill="RED" />
+            <Button mnemonicParsing="false" onMouseClicked="#handlercadastra" prefHeight="25.0" prefWidth="105.0" style="-fx-border-color: red; -fx-background-color: black;" text="Cadastrar" textFill="RED" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

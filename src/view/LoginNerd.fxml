@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginNerdController">
+   <children>
+      <ButtonBar layoutX="338.0" layoutY="306.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="cadastrar" mnemonicParsing="false" onMouseClicked="#handlerCadastrar" style="-fx-background-color: black; -fx-border-color: red;" text="Cadastrar" textFill="#fc0000" />
+            <Button fx:id="logar" mnemonicParsing="false" onMouseClicked="#handlerLogar" style="-fx-background-color: black; -fx-border-color: red;" text="Logar" textFill="RED" />
+        </buttons>
+      </ButtonBar>
+      <Pane layoutX="42.0" layoutY="44.0" prefHeight="197.0" prefWidth="522.0" style="-fx-border-color: red;">
+         <children>
+            <GridPane layoutX="13.0" layoutY="38.0" prefHeight="121.0" prefWidth="443.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="243.0" minWidth="10.0" prefWidth="202.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.0" minWidth="10.0" prefWidth="294.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" textAlignment="CENTER" wrappingWidth="192.341796875" />
+                  <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" textAlignment="CENTER" wrappingWidth="200.13671875" GridPane.rowIndex="1" />
+                  <TextField fx:id="usuario" prefHeight="25.0" prefWidth="239.0" style="-fx-border-color: red; -fx-background-color: black;" GridPane.columnIndex="1" />
+                  <PasswordField fx:id="senha" style="-fx-background-color: black; -fx-border-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <ImageView fitHeight="98.0" fitWidth="222.0" layoutX="61.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/imagens/8d3f6953-c2e4-414a-9bba-7fc44a164786.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
